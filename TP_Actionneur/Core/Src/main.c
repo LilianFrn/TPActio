@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "shell.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,7 +44,10 @@ TIM_HandleTypeDef htim1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+uint32_t uartRxReceived;
+uint8_t uartRxBuffer[UART_RX_BUFFER_SIZE];
+uint8_t uartTxBuffer[UART_TX_BUFFER_SIZE];
+int cmd_ready = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,13 +101,19 @@ int main(void)
   HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
 
-
+  shell_start();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if (uartRxReceived) {
+		  shell_process();
+	  }
+	  if (cmd_ready) {
+		  shell_execute();
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -339,7 +348,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_UART_RxCpltCallback (UART_HandleTypeDef * huart){
+	uartRxReceived = 1;
+	HAL_UART_Receive_IT(&huart2, uartRxBuffer, UART_RX_BUFFER_SIZE);
+}
 /* USER CODE END 4 */
 
 /**

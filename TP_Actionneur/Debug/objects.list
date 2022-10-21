@@ -1,4 +1,5 @@
 "./Core/Src/main.o"
+"./Core/Src/shell.o"
 "./Core/Src/stm32g4xx_hal_msp.o"
 "./Core/Src/stm32g4xx_it.o"
 "./Core/Src/syscalls.o"

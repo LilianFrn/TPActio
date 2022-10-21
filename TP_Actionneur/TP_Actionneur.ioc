@@ -1,5 +1,6 @@
 #MicroXplorer Configuration settings - do not modify
 File.Version=6
+GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false
 Mcu.CPN=STM32G474RET6
 Mcu.Family=STM32G4
@@ -182,13 +183,14 @@ SH.S_TIM1_CH1.0=TIM1_CH1,PWM Generation1 CH1 CH1N
 SH.S_TIM1_CH1.ConfNb=1
 SH.S_TIM1_CH2.0=TIM1_CH2,PWM Generation2 CH2 CH2N
 SH.S_TIM1_CH2.ConfNb=1
+TIM1.AutoReloadPreload=TIM_AUTORELOAD_PRELOAD_ENABLE
 TIM1.Channel-PWM\ Generation1\ CH1\ CH1N=TIM_CHANNEL_1
 TIM1.Channel-PWM\ Generation2\ CH2\ CH2N=TIM_CHANNEL_2
-TIM1.DeadTime=200
-TIM1.IPParameters=Channel-PWM Generation1 CH1 CH1N,Channel-PWM Generation2 CH2 CH2N,DeadTime,Prescaler,PeriodNoDither,OCNPolarity_1,OCNPolarity_2,OCPolarity_2,PulseNoDither_1,PulseNoDither_2
-TIM1.OCNPolarity_1=TIM_OCNPOLARITY_LOW
+TIM1.DeadTime=210
+TIM1.IPParameters=Channel-PWM Generation1 CH1 CH1N,Channel-PWM Generation2 CH2 CH2N,DeadTime,Prescaler,PeriodNoDither,OCNPolarity_1,OCNPolarity_2,OCPolarity_2,PulseNoDither_1,PulseNoDither_2,AutoReloadPreload
+TIM1.OCNPolarity_1=TIM_OCNPOLARITY_HIGH
 TIM1.OCNPolarity_2=TIM_OCNPOLARITY_HIGH
-TIM1.OCPolarity_2=TIM_OCPOLARITY_LOW
+TIM1.OCPolarity_2=TIM_OCPOLARITY_HIGH
 TIM1.PeriodNoDither=1023
 TIM1.Prescaler=9
 TIM1.PulseNoDither_1=613

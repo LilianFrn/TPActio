@@ -2,7 +2,7 @@
 
 Lilian Fournier - Solène Altaber - Corentin Fraysse
 
-** TP1: Commande MCC basique ** 
+** TP1: Commande MCC basique **  
 
 On cherche à commander une MCC en PWM complémentaire décalé.
 Pour cela on choisi les paramètre de configuration suivant :
@@ -11,5 +11,6 @@ Pour cela on choisi les paramètre de configuration suivant :
 - On a un Death Time à 220 ce qui correspond à 2 us
 - Comme on veut 60% de duty cycle, on met un pulse de 613 pour le ch1 et 2
 
-
+Etat d'avancement scéance 1: PWMs, EXTI et code commande générés 
+Etape en cours : gestion de la vitesse
 

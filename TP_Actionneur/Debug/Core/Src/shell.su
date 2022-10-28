@@ -1,3 +1,3 @@
-../Core/Src/shell.c:33:6:shell_start	8	static
-../Core/Src/shell.c:45:6:shell_process	8	static
-../Core/Src/shell.c:74:6:shell_execute	24	static
+../Core/Src/shell.c:42:6:shell_start	8	static
+../Core/Src/shell.c:54:6:shell_process	8	static
+../Core/Src/shell.c:83:6:shell_execute	24	static

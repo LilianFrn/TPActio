@@ -72,11 +72,13 @@ void shell_process(void) {
 }
 
 void shell_execute(void) {
+	/* HELP command */
 	if(strcmp(argv[0],com[0])==0)
 	{
 	  sprintf(uartTxBuffer,"Commands :\r\n%s\r\n%s\r\n%s\r\n%s\r\n", com[0], com[1], com[2], com[3]);
 	  HAL_UART_Transmit(&huart2, uartTxBuffer, UART_TX_BUFFER_SIZE, HAL_MAX_DELAY);
 	}
+	/* PINOUT command */
 	else if(strcmp(argv[0],com[1])==0)
 	{
 	  for (int i = 0; i < 10; i++) {
@@ -84,15 +86,19 @@ void shell_execute(void) {
 		  HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
 	  }
 	}
+	/* START command */
 	else if(strcmp(argv[0],com[2])==0)
 	{
-	  size = sprintf(uartTxBuffer,"Motor ON\r\n");
-	  HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
+		PWN_start();
+		size = sprintf(uartTxBuffer,"PWN ON\r\n");
+		HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
 	}
+	/* STOP command */
 	else if(strcmp(argv[0],com[3])==0)
 	{
-	  size = sprintf(uartTxBuffer,"Motor OFF\r\n");
-	  HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
+		PWN_stop();
+		size = sprintf(uartTxBuffer,"PWN OFF\r\n");
+		HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
 	}
 	else{
 	  HAL_UART_Transmit(&huart2, cmdNotFound, sizeof(cmdNotFound), HAL_MAX_DELAY);

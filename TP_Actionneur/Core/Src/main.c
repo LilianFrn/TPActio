@@ -63,19 +63,29 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN 0 */
 int __io_putchar(int chr)
 {
-	HAL_UART_Transmit(&huart1, (uint8_t*)&chr, 1, HAL_MAX_DELAY);
+	HAL_UART_Transmit(&huart2, (uint8_t*)&chr, 1, HAL_MAX_DELAY);
 	return chr;
+}
+
+void PWN_start(void){
+	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
+	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
+	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+}
+
+void PWN_stop(void){
+	HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_1);
+	HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_2);
+	HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_2);
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	  //HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
-	  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-	  //HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
-	  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
-	  printf("ca marche");
+	  PWN_start();
+	  printf("Bouton\r\n");
 }
-
 /* USER CODE END 0 */
 
 /**

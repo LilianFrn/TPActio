@@ -60,8 +60,8 @@ all: main-build
 main-build: TP_Actionneur.elf secondary-outputs
 
 # Tool invocations
-TP_Actionneur.elf TP_Actionneur.map: $(OBJS) $(USER_OBJS) /home/lilian/TPActio/TP_Actionneur/STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TP_Actionneur.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/lilian/TPActio/TP_Actionneur/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TP_Actionneur.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TP_Actionneur.elf TP_Actionneur.map: $(OBJS) $(USER_OBJS) C:\Users\solen\Desktop\soso\Ecole\ENSEA_3A\Autom\TPActio\TP_Actionneur\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TP_Actionneur.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\solen\Desktop\soso\Ecole\ENSEA_3A\Autom\TPActio\TP_Actionneur\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TP_Actionneur.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

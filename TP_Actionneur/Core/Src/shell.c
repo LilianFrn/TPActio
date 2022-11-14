@@ -1,3 +1,22 @@
+/* USER CODE BEGIN Header */
+/**
+  ****************************************************************************
+  * @file           : shell.c
+  * @brief          : Shell program body
+  * @author			: Solène Altaber, Lilian Fournier, Corentin Fraysse
+  ****************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ****************************************************************************
+  */
+/* USER CODE END Header */
 #include "string.h"
 #include <math.h>
 #include "shell.h"
@@ -6,6 +25,7 @@
 
 extern TIM_HandleTypeDef htim1;
 extern UART_HandleTypeDef huart2;
+extern ADC_HandleTypeDef hadc2;
 extern uint32_t uartRxReceived;
 
 extern uint8_t uartRxBuffer[UART_RX_BUFFER_SIZE];
@@ -15,6 +35,7 @@ extern int cmd_ready;
 
 uint8_t vitesseMaxTx[]="Vitesse trop importante";
 int vitesse = 0;
+uint32_t courant = 0;
 char vitesse_buffer[4];
 
 uint8_t prompt[]="user@Nucleo-STM32G431>>";
@@ -25,7 +46,7 @@ uint8_t started[]=
 		"\r\n";
 uint8_t newline[]="\r\n";
 uint8_t cmdNotFound[]="Command not found\r\n";
-uint8_t *com[COM_NB]={"help", "pinout", "start", "stop", "speed"};
+uint8_t *com[COM_NB]={"help", "pinout", "start", "stop", "speed", "current"};
 uint8_t *pins[PIN_NB]={"PA2 : USART2_TX", "PA3 : USART2_RX",
 					"PA5 : GREEN_LED", "PA13 : T_SWDIO",
 					"PA14 : T_SWCLK", "PC13 : BLUE_BUTTON",
@@ -39,6 +60,17 @@ static char* 		argv[MAX_ARGS];
 static int		 	argc = 0;
 static char*		token;
 
+/**
+ * @fn void shell_start(void)
+ * @brief Fonction permettant de communiquer en uart. Commandes possible:\n
+ * 		- start : génère des PWM avec rapport cyclique a 50%\n
+ * 		- speed : XXX compris entre 0 et 1023 (512 etant le rapport cyclique de 50%\n
+ * 		- stop : arrête les PWM\n
+ *		- current : permet d'afficher une image du courant de la phase Y\n
+ *
+ * @param none
+ * @return nothing
+ */
 void shell_start(void) {
 	memset(argv,NULL,MAX_ARGS*sizeof(char*));
 	memset(cmdBuffer,NULL,CMD_BUFFER_SIZE*sizeof(char));
@@ -51,6 +83,19 @@ void shell_start(void) {
 	HAL_UART_Transmit(&huart2, prompt, sizeof(prompt), HAL_MAX_DELAY);
 }
 
+/**
+ * \fn void shell_start(void)
+ * \brief Fonction permettant de communiquer en uart. Commandes possible:
+ * 		-help : liste les fonctions disponibles
+ * 		-pinout : donne le pinout de la carte
+ * 		-start : génère des PWM avec rapport cyclique a 50%
+ * 		-speed : XXXX compris entre 0 et 1023 (512 etant le rapport cyclique de 50%
+ * 		-stop : arrête les PWM
+ *
+ *
+ * \param nothing
+ * \return nothing
+ */
 void shell_process(void) {
 	switch(uartRxBuffer[0]){
 		// Nouvelle ligne, instruction à traiter
@@ -98,6 +143,11 @@ void shell_execute(void) {
 	/* START command */
 	else if(strcmp(argv[0],com[2])==0)
 	{
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET);
+		HAL_Delay(10);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_RESET);
+		TIM1->CCR1 = 512;
+		TIM1->CCR2 = 512;
 		PWN_start();
 		size = sprintf(uartTxBuffer,"PWN ON\r\n");
 		HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
@@ -110,22 +160,28 @@ void shell_execute(void) {
 		HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
 	}
 	else if(strncmp(argv[0],"speed",strlen("speed")) == 0){
-			vitesse = atoi(argv[1]);
-			printf("%d\r\n", vitesse);
+		vitesse = atoi(argv[1]);
+		printf("%d\r\n", vitesse);
 
-			while (TIM1->CCR1 < vitesse){
-				TIM1->CCR1++;
-				TIM1->CCR2--;
-				printf("%d %d\r\n", TIM1->CCR1, TIM1->CCR2);
-				HAL_Delay(10);
-			}
-			while (TIM1->CCR1 > vitesse){
-				TIM1->CCR1--;
-				TIM1->CCR2++;
-				printf("%d %d\r\n", TIM1->CCR1, TIM1->CCR2);
-				HAL_Delay(10);
-			}
+		while (TIM1->CCR1 < vitesse){
+			TIM1->CCR1++;
+			TIM1->CCR2--;
+			printf("%d %d\r\n", TIM1->CCR1, TIM1->CCR2);
+			HAL_Delay(50);
 		}
+		while (TIM1->CCR1 > vitesse){
+			TIM1->CCR1--;
+			TIM1->CCR2++;
+			printf("%d %d\r\n", TIM1->CCR1, TIM1->CCR2);
+			HAL_Delay(50);
+		}
+	}
+	else if(strcmp(argv[0],com[5])==0)
+	{
+		courant = HAL_ADC_GetValue(&hadc2);
+		size = sprintf(uartTxBuffer,"%d\r\n", courant);
+		HAL_UART_Transmit(&huart2, uartTxBuffer, size, HAL_MAX_DELAY);
+	}
 	else{
 	  HAL_UART_Transmit(&huart2, cmdNotFound, sizeof(cmdNotFound), HAL_MAX_DELAY);
 	}

@@ -26,6 +26,14 @@ Solution : on incrémente (ou décrémente) le rapport cyclique progressivement
 Etat d'avancement scéance 2: PWMs, start en EXTI et UART et gestion de la vitesse dans le Shell
 Etape en cours : relevé de courant 
 
+** TP3 **
+
+- Correction des lancements des PWM / câblage pour faire fonctionner le moteur
+- Documentation Doxygen / nettoyage de code
+- Début de l'acquisition du courant
+
+Etat d'avancement scéance 3: Moteur et interface fonctionelle
+Etape en cours : relevé de courant, asservissement
 
 
 

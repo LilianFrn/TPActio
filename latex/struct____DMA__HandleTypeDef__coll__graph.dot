@@ -1,0 +1,22 @@
+digraph "__DMA_HandleTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="__DMA_HandleTypeDef",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="DMA handle Structure definition."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DmaBaseAddress" ];
+  Node2 [label="DMA_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__TypeDef.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxRequestGenStatus" ];
+  Node3 [label="DMAMUX_RequestGenStatus\l_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__RequestGenStatus__TypeDef.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxRequestGen" ];
+  Node4 [label="DMAMUX_RequestGen_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__RequestGen__TypeDef.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Instance" ];
+  Node5 [label="DMA_Channel_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__Channel__TypeDef.html",tooltip="DMA Controller."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxChannel" ];
+  Node6 [label="DMAMUX_Channel_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__Channel__TypeDef.html",tooltip="DMA Multiplexer."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Init" ];
+  Node7 [label="DMA_InitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__InitTypeDef.html",tooltip="DMA Configuration Structure definition."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxChannelStatus" ];
+  Node8 [label="DMAMUX_ChannelStatus\l_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__ChannelStatus__TypeDef.html",tooltip=" "];
+}

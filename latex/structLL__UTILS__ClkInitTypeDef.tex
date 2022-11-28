@@ -1,0 +1,55 @@
+\hypertarget{structLL__UTILS__ClkInitTypeDef}{}\doxysection{LL\+\_\+\+UTILS\+\_\+\+Clk\+Init\+Type\+Def Struct Reference}
+\label{structLL__UTILS__ClkInitTypeDef}\index{LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}}
+
+
+UTILS System, AHB and APB buses clock configuration structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32g4xx\+\_\+ll\+\_\+utils.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structLL__UTILS__ClkInitTypeDef_a8674805c27fb68e07cdc60a9debe5d5e}{AHBCLKDivider}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structLL__UTILS__ClkInitTypeDef_a145153593da600e7840fb1351c95d0d5}{APB1\+CLKDivider}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structLL__UTILS__ClkInitTypeDef_a4e41c3fb594226ee0d7b8a0566b51530}{APB2\+CLKDivider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+UTILS System, AHB and APB buses clock configuration structure definition. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structLL__UTILS__ClkInitTypeDef_a8674805c27fb68e07cdc60a9debe5d5e}\label{structLL__UTILS__ClkInitTypeDef_a8674805c27fb68e07cdc60a9debe5d5e}} 
+\index{LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}!AHBCLKDivider@{AHBCLKDivider}}
+\index{AHBCLKDivider@{AHBCLKDivider}!LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{AHBCLKDivider}{AHBCLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+Clk\+Init\+Type\+Def\+::\+AHBCLKDivider}
+
+The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__LL__EC__SYSCLK__DIV}{AHB prescaler}}
+
+This feature can be modified afterwards using unitary function \mbox{\hyperlink{group__RCC__LL__EF__System_ga2e26a68b86dfe285aabaa5d6707086e4}{LL\+\_\+\+RCC\+\_\+\+Set\+AHBPrescaler()}}. \mbox{\Hypertarget{structLL__UTILS__ClkInitTypeDef_a145153593da600e7840fb1351c95d0d5}\label{structLL__UTILS__ClkInitTypeDef_a145153593da600e7840fb1351c95d0d5}} 
+\index{LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}!APB1CLKDivider@{APB1CLKDivider}}
+\index{APB1CLKDivider@{APB1CLKDivider}!LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{APB1CLKDivider}{APB1CLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+Clk\+Init\+Type\+Def\+::\+APB1\+CLKDivider}
+
+The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__LL__EC__APB1__DIV}{APB low-\/speed prescaler (APB1)}}
+
+This feature can be modified afterwards using unitary function \mbox{\hyperlink{group__RCC__LL__EF__System_ga7a644ead8a37cf74b0544d45db576285}{LL\+\_\+\+RCC\+\_\+\+Set\+APB1\+Prescaler()}}. \mbox{\Hypertarget{structLL__UTILS__ClkInitTypeDef_a4e41c3fb594226ee0d7b8a0566b51530}\label{structLL__UTILS__ClkInitTypeDef_a4e41c3fb594226ee0d7b8a0566b51530}} 
+\index{LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}!APB2CLKDivider@{APB2CLKDivider}}
+\index{APB2CLKDivider@{APB2CLKDivider}!LL\_UTILS\_ClkInitTypeDef@{LL\_UTILS\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{APB2CLKDivider}{APB2CLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+Clk\+Init\+Type\+Def\+::\+APB2\+CLKDivider}
+
+The APB2 clock (PCLK2) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__LL__EC__APB2__DIV}{APB high-\/speed prescaler (APB2)}}
+
+This feature can be modified afterwards using unitary function \mbox{\hyperlink{group__RCC__LL__EF__System_gaa1ff004532ea545d151b41b6820b7cf4}{LL\+\_\+\+RCC\+\_\+\+Set\+APB2\+Prescaler()}}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+TP\+\_\+\+Actionneur/\+Drivers/\+STM32\+G4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32g4xx__ll__utils_8h}{stm32g4xx\+\_\+ll\+\_\+utils.\+h}}\end{DoxyCompactItemize}

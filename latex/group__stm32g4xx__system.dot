@@ -1,0 +1,33 @@
+digraph "Stm32g4xx_system"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node11 [label="STM32G4xx_System_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Exported__Variables.html",tooltip=" "];
+  Node5 [label="STM32G4xx_System_Private\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__Defines.html",tooltip=" "];
+  Node6 [label="STM32G4xx_System_Private\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__Macros.html",tooltip=" "];
+  Node8 [label="STM32G4xx_System_Private\l_FunctionPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__FunctionPrototypes.html",tooltip=" "];
+  Node9 [label="STM32G4xx_System_Private\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__Functions.html",tooltip=" "];
+  Node4 [label="STM32G4xx_System_Private\l_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__TypesDefinitions.html",tooltip=" "];
+  Node10 [label="STM32G4xx_System_Includes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Includes.html",tooltip="Define to prevent recursive inclusion."];
+  Node1 [label="Stm32g4xx_system",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node13 [label="STM32G4xx_System_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Exported__Macros.html",tooltip=" "];
+  Node3 [label="STM32G4xx_System_Private\l_Includes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__Includes.html",tooltip=" "];
+  Node12 [label="STM32G4xx_System_Exported\l_Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Exported__Constants.html",tooltip=" "];
+  Node2 [label="CMSIS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS.html",tooltip=" "];
+  Node7 [label="STM32G4xx_System_Private\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Private__Variables.html",tooltip=" "];
+  Node14 [label="STM32G4xx_System_Exported\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__System__Exported__Functions.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node14 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,23 @@
+digraph "UART"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node6 [label="UART Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Private__Macros.html",tooltip=" "];
+  Node7 [label="UART Private variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Private__variables.html",tooltip=" "];
+  Node5 [label="UART Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Exported__Macros.html",tooltip=" "];
+  Node8 [label="UART Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Exported__Functions.html",tooltip=" "];
+  Node3 [label="UART Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Exported__Types.html",tooltip=" "];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__HAL__Driver.html",tooltip=" "];
+  Node9 [label="UART Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Private__Functions.html",tooltip=" "];
+  Node1 [label="UART",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="HAL UART module driver."];
+  Node4 [label="UART Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART__Exported__Constants.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+}

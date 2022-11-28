@@ -1,0 +1,9 @@
+digraph "RCC_OscInitTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="RCC_OscInitTypeDef",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) configuration structure definition."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PLL" ,fontname="Helvetica"];
+  Node2 [label="RCC_PLLInitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRCC__PLLInitTypeDef.html",tooltip="RCC PLL configuration structure definition."];
+}

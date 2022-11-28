@@ -1,0 +1,13 @@
+digraph "SysTick Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="SAU Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__SAUFunctions.html",tooltip="Functions that configure the SAU."];
+  Node4 [label="ITM Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__core__DebugFunctions.html",tooltip="Functions that access the ITM debug interface."];
+  Node3 [label="Cache Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__CacheFunctions.html",tooltip="Functions that configure Instruction and Data cache."];
+  Node1 [label="SysTick Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Functions that configure the System."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node3->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

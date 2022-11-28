@@ -1,0 +1,11 @@
+digraph "Data Watchpoint and Trace (DWT)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node3 [label="Trace Port Interface\l (TPI)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__TPI.html",tooltip="Type definitions for the Trace Port Interface (TPI)"];
+  Node1 [label="Data Watchpoint and\l Trace (DWT)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Type definitions for the Data Watchpoint and Trace (DWT)"];
+  Node2 [label="Instrumentation Trace\l Macrocell (ITM)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__ITM.html",tooltip="Type definitions for the Instrumentation Trace Macrocell (ITM)"];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

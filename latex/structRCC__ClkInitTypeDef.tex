@@ -1,0 +1,68 @@
+\hypertarget{structRCC__ClkInitTypeDef}{}\doxysection{RCC\+\_\+\+Clk\+Init\+Type\+Def Struct Reference}
+\label{structRCC__ClkInitTypeDef}\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+
+
+RCC System, AHB and APB busses clock configuration structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32g4xx\+\_\+hal\+\_\+rcc.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__ClkInitTypeDef_a93a53676a1cfc5b55b8b990e7ff4dac5}{Clock\+Type}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__ClkInitTypeDef_a4ceff1fdbf423e347c63052ca2c1d7e1}{SYSCLKSource}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__ClkInitTypeDef_abd9bcaa8dcf4b816462ee2930ab3e993}{AHBCLKDivider}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__ClkInitTypeDef_a21ceb024102adc3c4dc7eb270cf02ebd}{APB1\+CLKDivider}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__ClkInitTypeDef_aa75c110cd93855d49249f38da8cf94f7}{APB2\+CLKDivider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RCC System, AHB and APB busses clock configuration structure definition. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structRCC__ClkInitTypeDef_abd9bcaa8dcf4b816462ee2930ab3e993}\label{structRCC__ClkInitTypeDef_abd9bcaa8dcf4b816462ee2930ab3e993}} 
+\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}!AHBCLKDivider@{AHBCLKDivider}}
+\index{AHBCLKDivider@{AHBCLKDivider}!RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{AHBCLKDivider}{AHBCLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Clk\+Init\+Type\+Def\+::\+AHBCLKDivider}
+
+The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__AHB__Clock__Source}{AHB Clock Source}} ~\newline
+ \mbox{\Hypertarget{structRCC__ClkInitTypeDef_a21ceb024102adc3c4dc7eb270cf02ebd}\label{structRCC__ClkInitTypeDef_a21ceb024102adc3c4dc7eb270cf02ebd}} 
+\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}!APB1CLKDivider@{APB1CLKDivider}}
+\index{APB1CLKDivider@{APB1CLKDivider}!RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{APB1CLKDivider}{APB1CLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Clk\+Init\+Type\+Def\+::\+APB1\+CLKDivider}
+
+The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__APB1__APB2__Clock__Source}{APB1 APB2 Clock Source}} \mbox{\Hypertarget{structRCC__ClkInitTypeDef_aa75c110cd93855d49249f38da8cf94f7}\label{structRCC__ClkInitTypeDef_aa75c110cd93855d49249f38da8cf94f7}} 
+\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}!APB2CLKDivider@{APB2CLKDivider}}
+\index{APB2CLKDivider@{APB2CLKDivider}!RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{APB2CLKDivider}{APB2CLKDivider}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Clk\+Init\+Type\+Def\+::\+APB2\+CLKDivider}
+
+The APB2 clock (PCLK2) divider. This clock is derived from the AHB clock (HCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__APB1__APB2__Clock__Source}{APB1 APB2 Clock Source}} \mbox{\Hypertarget{structRCC__ClkInitTypeDef_a93a53676a1cfc5b55b8b990e7ff4dac5}\label{structRCC__ClkInitTypeDef_a93a53676a1cfc5b55b8b990e7ff4dac5}} 
+\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}!ClockType@{ClockType}}
+\index{ClockType@{ClockType}!RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{ClockType}{ClockType}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Clk\+Init\+Type\+Def\+::\+Clock\+Type}
+
+The clock to be configured. This parameter can be a value of \mbox{\hyperlink{group__RCC__System__Clock__Type}{System Clock Type}} ~\newline
+ \mbox{\Hypertarget{structRCC__ClkInitTypeDef_a4ceff1fdbf423e347c63052ca2c1d7e1}\label{structRCC__ClkInitTypeDef_a4ceff1fdbf423e347c63052ca2c1d7e1}} 
+\index{RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}!SYSCLKSource@{SYSCLKSource}}
+\index{SYSCLKSource@{SYSCLKSource}!RCC\_ClkInitTypeDef@{RCC\_ClkInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{SYSCLKSource}{SYSCLKSource}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+Clk\+Init\+Type\+Def\+::\+SYSCLKSource}
+
+The clock source used as system clock (SYSCLK). This parameter can be a value of \mbox{\hyperlink{group__RCC__System__Clock__Source}{System Clock Source}} ~\newline
+ 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+TP\+\_\+\+Actionneur/\+Drivers/\+STM32\+G4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32g4xx__hal__rcc_8h}{stm32g4xx\+\_\+hal\+\_\+rcc.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+digraph "Core Debug Registers (CoreDebug)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="Core Debug Registers\l (CoreDebug)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Type definitions for the Core Debug Registers."];
+  Node3 [label="Core register bit field\l macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__core__bitfield.html",tooltip="Macros for use with bit field definitions (xxx_Pos, xxx_Msk)."];
+  Node2 [label="Floating Point Unit\l (FPU)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__FPU.html",tooltip="Type definitions for the Floating Point Unit (FPU)"];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

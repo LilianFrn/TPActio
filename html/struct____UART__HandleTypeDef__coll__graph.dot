@@ -1,0 +1,30 @@
+digraph "__UART_HandleTypeDef"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="__UART_HandleTypeDef",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UART handle Structure definition."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AdvancedInit" ,fontname="Helvetica"];
+  Node2 [label="UART_AdvFeatureInitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUART__AdvFeatureInitTypeDef.html",tooltip="UART Advanced Features initialization structure definition."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Init" ,fontname="Helvetica"];
+  Node3 [label="UART_InitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUART__InitTypeDef.html",tooltip="UART Init Structure definition."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hdmarx\nhdmatx" ,fontname="Helvetica"];
+  Node4 [label="__DMA_HandleTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____DMA__HandleTypeDef.html",tooltip="DMA handle Structure definition."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DmaBaseAddress" ,fontname="Helvetica"];
+  Node5 [label="DMA_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__TypeDef.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxRequestGenStatus" ,fontname="Helvetica"];
+  Node6 [label="DMAMUX_RequestGenStatus\l_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__RequestGenStatus__TypeDef.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxRequestGen" ,fontname="Helvetica"];
+  Node7 [label="DMAMUX_RequestGen_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__RequestGen__TypeDef.html",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Instance" ,fontname="Helvetica"];
+  Node8 [label="DMA_Channel_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__Channel__TypeDef.html",tooltip="DMA Controller."];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxChannel" ,fontname="Helvetica"];
+  Node9 [label="DMAMUX_Channel_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__Channel__TypeDef.html",tooltip="DMA Multiplexer."];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Init" ,fontname="Helvetica"];
+  Node10 [label="DMA_InitTypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMA__InitTypeDef.html",tooltip="DMA Configuration Structure definition."];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMAmuxChannelStatus" ,fontname="Helvetica"];
+  Node11 [label="DMAMUX_ChannelStatus\l_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDMAMUX__ChannelStatus__TypeDef.html",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Instance" ,fontname="Helvetica"];
+  Node12 [label="USART_TypeDef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUSART__TypeDef.html",tooltip="Universal Synchronous Asynchronous Receiver Transmitter."];
+}

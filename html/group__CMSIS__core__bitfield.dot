@@ -1,0 +1,11 @@
+digraph "Core register bit field macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node3 [label="Core Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__core__base.html",tooltip="Definitions for base addresses, unions, and structures."];
+  Node2 [label="Core Debug Registers\l (CoreDebug)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__CoreDebug.html",tooltip="Type definitions for the Core Debug Registers."];
+  Node1 [label="Core register bit field\l macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Macros for use with bit field definitions (xxx_Pos, xxx_Msk)."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

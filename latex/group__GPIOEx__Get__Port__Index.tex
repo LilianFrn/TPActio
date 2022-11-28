@@ -1,0 +1,31 @@
+\hypertarget{group__GPIOEx__Get__Port__Index}{}\doxysection{GPIOEx Get Port Index}
+\label{group__GPIOEx__Get__Port__Index}\index{GPIOEx Get Port Index@{GPIOEx Get Port Index}}
+Collaboration diagram for GPIOEx Get Port Index\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries GPIO\+\_\+\+GET\+\_\+\+INDEX}(\+\_\+\+\_\+\+GPIOx\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__GPIOEx__Get__Port__Index_ga3830db89326a2268d296a6498fd31384}\label{group__GPIOEx__Get__Port__Index_ga3830db89326a2268d296a6498fd31384}} 
+\index{GPIOEx Get Port Index@{GPIOEx Get Port Index}!GPIO\_GET\_INDEX@{GPIO\_GET\_INDEX}}
+\index{GPIO\_GET\_INDEX@{GPIO\_GET\_INDEX}!GPIOEx Get Port Index@{GPIOEx Get Port Index}}
+\doxysubsubsection{\texorpdfstring{GPIO\_GET\_INDEX}{GPIO\_GET\_INDEX}}
+{\footnotesize\ttfamily \#define GPIO\+\_\+\+GET\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+GPIOx\+\_\+\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                      (((\_\_GPIOx\_\_) == (GPIOA))? 0UL :\(\backslash\)}
+\DoxyCodeLine{                                      ((\_\_GPIOx\_\_) == (GPIOB))? 1UL :\(\backslash\)}
+\DoxyCodeLine{                                      ((\_\_GPIOx\_\_) == (GPIOC))? 2UL :\(\backslash\)}
+\DoxyCodeLine{                                      ((\_\_GPIOx\_\_) == (GPIOD))? 3UL :\(\backslash\)}
+\DoxyCodeLine{                                      ((\_\_GPIOx\_\_) == (GPIOE))? 4UL :\(\backslash\)}
+\DoxyCodeLine{                                      ((\_\_GPIOx\_\_) == (GPIOF))? 5UL : 6UL)}
+
+\end{DoxyCode}

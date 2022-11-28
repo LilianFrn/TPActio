@@ -1,0 +1,19 @@
+digraph "SYSCFG Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node6 [label="Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__SYSCFG__flags__definition.html",tooltip=" "];
+  Node5 [label="CCM Write protection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__SYSCFG__CCMSRAMWRP.html",tooltip=" "];
+  Node2 [label="HAL Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__HAL__Exported__Constants.html",tooltip=" "];
+  Node3 [label="Boot Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__SYSCFG__BootMode.html",tooltip=" "];
+  Node7 [label="Fast-mode Plus on GPIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__SYSCFG__FastModePlus__GPIO.html",tooltip=" "];
+  Node4 [label="FPU Interrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__SYSCFG__FPU__Interrupts.html",tooltip=" "];
+  Node1 [label="SYSCFG Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+}

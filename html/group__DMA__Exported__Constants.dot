@@ -1,0 +1,31 @@
+digraph "DMA Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="DMA Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node7 [label="DMA Memory incremented mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Memory__incremented__mode.html",tooltip=" "];
+  Node9 [label="DMA Memory data size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Memory__data__size.html",tooltip=" "];
+  Node13 [label="DMA flag definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__flag__definitions.html",tooltip=" "];
+  Node10 [label="DMA mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__mode.html",tooltip=" "];
+  Node12 [label="DMA interrupt enable\l definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__interrupt__enable__definitions.html",tooltip=" "];
+  Node2 [label="DMA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA.html",tooltip="DMA HAL module driver."];
+  Node5 [label="DMA Data transfer direction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Data__transfer__direction.html",tooltip=" "];
+  Node8 [label="DMA Peripheral data size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Peripheral__data__size.html",tooltip=" "];
+  Node3 [label="DMA Error Code",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Error__Code.html",tooltip=" "];
+  Node11 [label="DMA Priority level",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Priority__level.html",tooltip=" "];
+  Node4 [label="DMA request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__request.html",tooltip=" "];
+  Node6 [label="DMA Peripheral incremented mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA__Peripheral__incremented__mode.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+}

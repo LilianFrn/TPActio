@@ -1,0 +1,11 @@
+digraph "System Tick Timer (SysTick)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="System Tick Timer \l(SysTick)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Type definitions for the System Timer Registers."];
+  Node2 [label="System Controls not\l in SCB (SCnSCB)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__SCnSCB.html",tooltip="Type definitions for the System Control and ID Register not in the SCB."];
+  Node3 [label="Instrumentation Trace\l Macrocell (ITM)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__ITM.html",tooltip="Type definitions for the Instrumentation Trace Macrocell (ITM)"];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

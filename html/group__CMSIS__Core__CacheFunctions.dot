@@ -1,0 +1,11 @@
+digraph "Cache Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="FPU Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__FpuFunctions.html",tooltip="Function that provides FPU type."];
+  Node1 [label="Cache Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Functions that configure Instruction and Data cache."];
+  Node3 [label="SysTick Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Core__SysTickFunctions.html",tooltip="Functions that configure the System."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

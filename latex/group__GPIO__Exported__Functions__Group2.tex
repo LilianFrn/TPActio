@@ -1,0 +1,55 @@
+\hypertarget{group__GPIO__Exported__Functions__Group2}{}\doxysection{IO operation functions}
+\label{group__GPIO__Exported__Functions__Group2}\index{IO operation functions@{IO operation functions}}
+
+
+IO operation functions.  
+
+
+Collaboration diagram for IO operation functions\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_gaf2b819ea6551319ddd5670db318d2e4e}\label{group__GPIO__Exported__Functions__Group2_gaf2b819ea6551319ddd5670db318d2e4e}} 
+\mbox{\hyperlink{group__GPIO__Exported__Types_ga5b3ef0486b179415581eb342e0ea6b43}{GPIO\+\_\+\+Pin\+State}} {\bfseries HAL\+\_\+\+GPIO\+\_\+\+Read\+Pin} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_gaf4b97bdf533a02f51ef696d43b6da5c4}\label{group__GPIO__Exported__Functions__Group2_gaf4b97bdf533a02f51ef696d43b6da5c4}} 
+void {\bfseries HAL\+\_\+\+GPIO\+\_\+\+Write\+Pin} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, uint16\+\_\+t GPIO\+\_\+\+Pin, \mbox{\hyperlink{group__GPIO__Exported__Types_ga5b3ef0486b179415581eb342e0ea6b43}{GPIO\+\_\+\+Pin\+State}} Pin\+State)
+\item 
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_gaf5e0c89f752de5cdedcc30db068133f6}\label{group__GPIO__Exported__Functions__Group2_gaf5e0c89f752de5cdedcc30db068133f6}} 
+void {\bfseries HAL\+\_\+\+GPIO\+\_\+\+Toggle\+Pin} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_gad03c868b4a4fb25883c1bb86d0c7e9ca}\label{group__GPIO__Exported__Functions__Group2_gad03c868b4a4fb25883c1bb86d0c7e9ca}} 
+\mbox{\hyperlink{stm32g4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} {\bfseries HAL\+\_\+\+GPIO\+\_\+\+Lock\+Pin} (\mbox{\hyperlink{structGPIO__TypeDef}{GPIO\+\_\+\+Type\+Def}} $\ast$GPIOx, uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_gaa5de1ec4ebdd47e3e2b786224adaa9d0}\label{group__GPIO__Exported__Functions__Group2_gaa5de1ec4ebdd47e3e2b786224adaa9d0}} 
+void {\bfseries HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+IRQHandler} (uint16\+\_\+t GPIO\+\_\+\+Pin)
+\item 
+void \mbox{\hyperlink{group__GPIO__Exported__Functions__Group2_ga0cd91fd3a9608559c2a87a8ba6cba55f}{HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+Callback}} (uint16\+\_\+t GPIO\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Overwrite du callback du bouton pour lancer les PWM avec. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+IO operation functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__GPIO__Exported__Functions__Group2_ga0cd91fd3a9608559c2a87a8ba6cba55f}\label{group__GPIO__Exported__Functions__Group2_ga0cd91fd3a9608559c2a87a8ba6cba55f}} 
+\index{IO operation functions@{IO operation functions}!HAL\_GPIO\_EXTI\_Callback@{HAL\_GPIO\_EXTI\_Callback}}
+\index{HAL\_GPIO\_EXTI\_Callback@{HAL\_GPIO\_EXTI\_Callback}!IO operation functions@{IO operation functions}}
+\doxysubsubsection{\texorpdfstring{HAL\_GPIO\_EXTI\_Callback()}{HAL\_GPIO\_EXTI\_Callback()}}
+{\footnotesize\ttfamily void HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+Callback (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{GPIO\+\_\+\+Pin }\end{DoxyParamCaption})}
+
+
+
+Overwrite du callback du bouton pour lancer les PWM avec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & GPIO\+\_\+\+Pin \+: Unused \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}

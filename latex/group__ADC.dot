@@ -1,0 +1,23 @@
+digraph "ADC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node9 [label="ADC Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Private__Functions.html",tooltip=" "];
+  Node5 [label="ADC Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Private__Macros.html",tooltip=" "];
+  Node8 [label="ADC_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Exported__Functions.html",tooltip=" "];
+  Node3 [label="ADC Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Exported__Types.html",tooltip=" "];
+  Node7 [label="ADC Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Exported__Macros.html",tooltip=" "];
+  Node1 [label="ADC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ADC HAL module driver."];
+  Node6 [label="ADC Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Private__Constants.html",tooltip=" "];
+  Node4 [label="ADC Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__Exported__Constants.html",tooltip=" "];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__HAL__Driver.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+}

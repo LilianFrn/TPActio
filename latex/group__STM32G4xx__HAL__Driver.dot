@@ -1,0 +1,47 @@
+digraph "STM32G4xx_HAL_Driver"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node19 [label="TIMEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx.html",tooltip="TIM Extended HAL module driver."];
+  Node8 [label="ADCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADCEx.html",tooltip="ADC Extended HAL module driver."];
+  Node13 [label="FLASH_RAMFUNC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__FLASH__RAMFUNC.html",tooltip="FLASH functions executed from RAM."];
+  Node21 [label="UARTEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx.html",tooltip="UART Extended HAL module driver."];
+  Node17 [label="RCCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx.html",tooltip="RCC Extended HAL module driver."];
+  Node15 [label="PWREx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx.html",tooltip="PWR Extended HAL module driver."];
+  Node6 [label="HAL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__HAL.html",tooltip="HAL module driver."];
+  Node2 [label="CORTEX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX.html",tooltip="CORTEX HAL module driver."];
+  Node9 [label="DMA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMA.html",tooltip="DMA HAL module driver."];
+  Node5 [label="GPIOEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIOEx.html",tooltip="GPIO Extended HAL module driver."];
+  Node18 [label="TIM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM.html",tooltip="TIM HAL module driver."];
+  Node12 [label="FLASHEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__FLASHEx.html",tooltip="FLASH Extended HAL module driver."];
+  Node7 [label="ADC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC.html",tooltip="ADC HAL module driver."];
+  Node4 [label="GPIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO.html",tooltip="GPIO HAL module driver."];
+  Node14 [label="PWR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWR.html",tooltip="PWR HAL module driver."];
+  Node3 [label="EXTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__EXTI.html",tooltip="EXTI HAL module driver."];
+  Node1 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node20 [label="UART",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UART.html",tooltip="HAL UART module driver."];
+  Node16 [label="RCC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC.html",tooltip="RCC HAL module driver."];
+  Node10 [label="DMAEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__DMAEx.html",tooltip="DMA Extended HAL module driver."];
+  Node11 [label="FLASH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__FLASH.html",tooltip="FLASH HAL module driver."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node17 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node18 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node19 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node20 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node21 [shape=plaintext, dir="back", style="solid"];
+}

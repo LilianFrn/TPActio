@@ -1,0 +1,29 @@
+digraph "ADC Extended Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node9 [label="ADC instance - Groups",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__HAL__EC__GROUPS.html",tooltip=" "];
+  Node2 [label="ADCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADCEx.html",tooltip="ADC Extended HAL module driver."];
+  Node5 [label="Channel - Single or\l differential ending",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__HAL__EC__CHANNEL__SINGLE__DIFF__ENDING.html",tooltip=" "];
+  Node10 [label="ADCx CFGR fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__CFGR__fields.html",tooltip=" "];
+  Node3 [label="ADC group injected\l trigger source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__injected__external__trigger__source.html",tooltip=" "];
+  Node4 [label="ADC group injected\l trigger edge (when\l external trigger is\l selected)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__injected__external__trigger__edge.html",tooltip=" "];
+  Node12 [label="ADCx CFGR sub fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__CFGR__fields__2.html",tooltip=" "];
+  Node7 [label="ADC Extended Offset Sign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADCEx__OffsetSign.html",tooltip=" "];
+  Node6 [label="ADC instance - Offset\l number",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__HAL__EC__OFFSET__NB.html",tooltip=" "];
+  Node1 [label="ADC Extended Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node11 [label="ADCx SMPR1 fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__SMPR1__fields.html",tooltip=" "];
+  Node8 [label="ADC group injected\l - Sequencer ranks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__ADC__INJ__SEQ__RANKS.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+}

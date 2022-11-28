@@ -1,0 +1,19 @@
+digraph "RCCEx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node5 [label="RCCEx Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Exported__Macros.html",tooltip=" "];
+  Node1 [label="RCCEx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="RCC Extended HAL module driver."];
+  Node6 [label="RCCEx_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Exported__Functions.html",tooltip=" "];
+  Node3 [label="RCCEx Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Exported__Types.html",tooltip=" "];
+  Node7 [label="RCCEx_Private_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Private__Macros.html",tooltip=" "];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__HAL__Driver.html",tooltip=" "];
+  Node4 [label="RCCEx Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Exported__Constants.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+}

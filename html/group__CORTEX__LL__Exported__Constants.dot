@@ -1,0 +1,13 @@
+digraph "CORTEX Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="CORTEX Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node4 [label="Handler Fault type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX__LL__EC__FAULT.html",tooltip=" "];
+  Node3 [label="SYSTICK Clock Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX__LL__EC__CLKSOURCE__HCLK.html",tooltip=" "];
+  Node2 [label="CORTEX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CORTEX__LL.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

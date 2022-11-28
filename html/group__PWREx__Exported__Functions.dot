@@ -1,0 +1,11 @@
+digraph "PWR Extended Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="PWR Extended Exported\l Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="PWREx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx.html",tooltip="PWR Extended HAL module driver."];
+  Node3 [label="Extended Peripheral\l Control functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__Exported__Functions__Group1.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

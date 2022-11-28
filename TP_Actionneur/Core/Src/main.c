@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  * @author			: Solène Altaber, Lilian Fournier, Corentin Fraysse
+  * @file           main.c
+  * @brief          Main program body
+  * @author			Solène Altaber, Lilian Fournier, Corentin Fraysse
   ******************************************************************************
   * @attention
   *
@@ -71,6 +71,13 @@ int __io_putchar(int chr)
 	return chr;
 }
 
+/**
+ * @fn PWM_start(void)
+ * @brief Lance les PWM sur le timer 1
+ *
+ * @param none
+ * @return nothing
+ */
 void PWN_start(void){
 	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
 	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
@@ -78,6 +85,13 @@ void PWN_start(void){
 	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
 }
 
+/**
+ * @fn PWM_stop(void)
+ * @brief Stop les PWM sur le timer 1
+ *
+ * @param none
+ * @return nothing
+ */
 void PWN_stop(void){
 	HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_1);
 	HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
@@ -85,6 +99,13 @@ void PWN_stop(void){
 	HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_2);
 }
 
+/**
+ * @fn HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+ * @brief Overwrite du callback du bouton pour lancer les PWM avec
+ *
+ * @param uint16_t GPIO_Pin : Unused
+ * @return nothing
+ */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	  PWN_start();
@@ -93,7 +114,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
+  * @brief  Entrée de l'application
+  * 
+  * Connexions :
+  * 	- Blue TOP 			PA 12 -> PIN 11
+  * 	- Blue BOTTOM 		PA 9 -> PIN 29
+  * 	- Yellow TOP 		PA 11 -> PIN 12
+  * 	- Yellow BOTTOM 	PA 8 -> PIN 30
+  * 	- RESET				PC 3 -> PIN 33
+  * 	- ADC1_IN			PA 0 -> PIN 16
   * @retval int
   */
 int main(void)
@@ -124,6 +153,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_ADC2_Init();
   /* USER CODE BEGIN 2 */
+  /* Setup de l'ADC */
   if (HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED) != HAL_OK) {
 	  Error_Handler();
   }
@@ -134,7 +164,7 @@ int main(void)
 
   if ( HAL_ADC_PollForConversion(&hadc2, 50)!= HAL_OK) {
   	  Error_Handler();
-    }
+  }
 
   float val = HAL_ADC_GetValue(&hadc2);
   int size = sprintf(uartTxBuffer, "value ADC= %f\r\n", val);

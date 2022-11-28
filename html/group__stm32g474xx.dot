@@ -1,0 +1,23 @@
+digraph "Stm32g474xx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node6 [label="Peripheral_memory_map",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Peripheral__memory__map.html",tooltip=" "];
+  Node8 [label="Exported_constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Exported__constants.html",tooltip=" "];
+  Node9 [label="Exported_macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Exported__macros.html",tooltip=" "];
+  Node2 [label="CMSIS_Device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__CMSIS__Device.html",tooltip=" "];
+  Node4 [label="Peripheral_interrupt\l_number_definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Peripheral__interrupt__number__definition.html",tooltip=" "];
+  Node1 [label="Stm32g474xx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 [label="Peripheral_registers\l_structures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Peripheral__registers__structures.html",tooltip=" "];
+  Node3 [label="Configuration_section\l_for_CMSIS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Configuration__section__for__CMSIS.html",tooltip=" "];
+  Node7 [label="Peripheral_declaration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__Peripheral__declaration.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+}

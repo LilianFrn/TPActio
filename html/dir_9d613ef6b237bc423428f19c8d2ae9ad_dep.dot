@@ -1,0 +1,19 @@
+digraph "TP_Actionneur/Drivers" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_acdc5646ab76ff805fc9533ee37267c8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TP_Actionneur" fontname="Helvetica", fontsize="10", URL="dir_acdc5646ab76ff805fc9533ee37267c8.html"]
+  dir_7a63e2a7a3089a1afb91cfe87f0d9a31 [shape=box label="Core" fillcolor="white" style="filled" color="red" URL="dir_7a63e2a7a3089a1afb91cfe87f0d9a31.html"];
+  subgraph clusterdir_9d613ef6b237bc423428f19c8d2ae9ad {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_9d613ef6b237bc423428f19c8d2ae9ad.html"];
+    dir_9d613ef6b237bc423428f19c8d2ae9ad [shape=plaintext label="Drivers"];
+  dir_b6f7a9f185e2449ec1b6d07920557ba0 [shape=box label="CMSIS" fillcolor="white" style="filled" color="red" URL="dir_b6f7a9f185e2449ec1b6d07920557ba0.html"];
+  dir_51160d3d92f8b9f00407d5b00509b989 [shape=box label="STM32G4xx_HAL_Driver" fillcolor="white" style="filled" color="red" URL="dir_51160d3d92f8b9f00407d5b00509b989.html"];
+  }
+  }
+  dir_7a63e2a7a3089a1afb91cfe87f0d9a31->dir_51160d3d92f8b9f00407d5b00509b989 [headlabel="11", labeldistance=1.5 headhref="dir_000001_000018.html"];
+  dir_7a63e2a7a3089a1afb91cfe87f0d9a31->dir_b6f7a9f185e2449ec1b6d07920557ba0 [headlabel="1", labeldistance=1.5 headhref="dir_000001_000012.html"];
+  dir_51160d3d92f8b9f00407d5b00509b989->dir_7a63e2a7a3089a1afb91cfe87f0d9a31 [headlabel="1", labeldistance=1.5 headhref="dir_000018_000001.html"];
+  dir_51160d3d92f8b9f00407d5b00509b989->dir_b6f7a9f185e2449ec1b6d07920557ba0 [headlabel="16", labeldistance=1.5 headhref="dir_000018_000012.html"];
+}

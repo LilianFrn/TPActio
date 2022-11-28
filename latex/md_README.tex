@@ -1,0 +1,25 @@
+Lilian Fournier -\/ Solène Altaber -\/ Corentin Fraysse
+
+$\ast$$\ast$ TP1\+: Commande MCC basique $\ast$$\ast$ ~\newline
+
+
+On cherche à commander une MCC en PWM complémentaire décalé. Pour cela on choisi les paramètre de configuration suivant \+:
+\begin{DoxyItemize}
+\item TIM1\+\_\+\+CH1, TIM1\+\_\+\+CH2, TIM1\+\_\+\+CH1N, TIM1\+\_\+\+CH2N seront nos 4 broches pour la PWM
+\item On a une fréquence de fonctionnement de 16 k\+Hz = Sys\+Clk/(ARR+1)(PSC+1)=170 MHz/(1023+1)(9+1)
+\item On a un Dead Time à 220 ce qui correspond à 2 us
+\item Comme on veut 60\% de duty cycle, on met un pulse de 613 pour le ch1 et 2
+\end{DoxyItemize}
+
+Etat d\textquotesingle{}avancement scéance 1\+: PWMs, EXTI et code commande générés Etape en cours \+: gestion de la vitesse
+
+$\ast$$\ast$ TP2 $\ast$$\ast$
+
+
+\begin{DoxyItemize}
+\item On rajoute le lancement des PWMs grâce à un bouton (GPIO\+\_\+\+EXTI13). Pour cela, il suffit de lancer les fonctions HAL\+\_\+\+TIM\+\_\+\+PWM\+\_\+\+Start et HAL\+\_\+\+TIMX\+\_\+\+PWM\+\_\+\+Start dans la focntion de Callback de l\textquotesingle{}EXTI.
+\item On rajoute égalament le démarrage des PWM grace à une commande \char`\"{}start\char`\"{} dans le Shell.
+\item On veut maintenant pouvoir gerer la vitesse du moteur (donc le rapport cyclique des PWMs) dans le Shell. Pour ce faire, il nous faut récuperer l\textquotesingle{}entrée manuscrite \char`\"{}speed = XXX\char`\"{} et modifier le registre CCR1 et 2 (counter) en conséquence. Problème\+: On change brutalement le rapport cyclique ce qui crée un appel de courant important ce qui peut abimer le moteur. Solution \+: on incrémente (ou décrémente) le rapport cyclique progressivement
+\end{DoxyItemize}
+
+Etat d\textquotesingle{}avancement scéance 2\+: PWMs, start en EXTI et UART et gestion de la vitesse dans le Shell Etape en cours \+: relevé de courant 

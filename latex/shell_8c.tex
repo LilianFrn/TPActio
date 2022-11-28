@@ -1,0 +1,191 @@
+\hypertarget{shell_8c}{}\doxysection{TP\+\_\+\+Actionneur/\+Core/\+Src/shell.c File Reference}
+\label{shell_8c}\index{TP\_Actionneur/Core/Src/shell.c@{TP\_Actionneur/Core/Src/shell.c}}
+
+
+Shell program body.  
+
+
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+Include dependency graph for shell.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{shell_8c_ad1f18f739da7703628c3663209463a0d}{shell\+\_\+start}} (void)
+\begin{DoxyCompactList}\small\item\em Set la mémoire des variables utilisées par le Shell, print le mssage de bienvenue et lance la première interruption UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell_8c_a9a41609fa1e3d6dbbecd0b5cd28fae0f}{shell\+\_\+process}} (void)
+\begin{DoxyCompactList}\small\item\em Traite le caractère reçu à chaque entrée, met le flag pour lancer la commande à 1 si le CR est détecté \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell_8c_a3529f29606412127c579b098455bfe92}{shell\+\_\+execute}} (void)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de reconnaître une commande et l\textquotesingle{}éxécuter~\newline
+ -\/help \+: Liste les fonctions disponibles~\newline
+ -\/pinout \+: Donne le pinout de la carte~\newline
+ -\/start \+: Génère des PWM avec rapport cyclique a 50\%~\newline
+ -\/speed \+: Argument \+: nombre compris entre 0 et 1023 (512 etant le rapport cyclique de 50\%)~\newline
+ -\/stop \+: Arrête les PWM~\newline
+ -\/current \+: Récupère le courant pour l\textquotesingle{}asservissement (non testée) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{shell_8c_a25fc663547539bc49fecc0011bd76ab5}\label{shell_8c_a25fc663547539bc49fecc0011bd76ab5}} 
+\mbox{\hyperlink{structTIM__HandleTypeDef}{TIM\+\_\+\+Handle\+Type\+Def}} {\bfseries htim1}
+\item 
+\mbox{\Hypertarget{shell_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{shell_8c_aa9479c261d65eecedd3d9582f7f0f89c}} 
+\mbox{\hyperlink{group__UART__Exported__Types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} {\bfseries huart2}
+\item 
+\mbox{\Hypertarget{shell_8c_acd9221f1aa19aebfe0b744947f2daf49}\label{shell_8c_acd9221f1aa19aebfe0b744947f2daf49}} 
+\mbox{\hyperlink{structADC__HandleTypeDef}{ADC\+\_\+\+Handle\+Type\+Def}} {\bfseries hadc2}
+\item 
+\mbox{\Hypertarget{shell_8c_a9d8a518124b90c249458a5b30ab36c52}\label{shell_8c_a9d8a518124b90c249458a5b30ab36c52}} 
+uint32\+\_\+t {\bfseries uart\+Rx\+Received}
+\item 
+\mbox{\Hypertarget{shell_8c_a2542ac6d4440b9e1c4a6435c55c79df3}\label{shell_8c_a2542ac6d4440b9e1c4a6435c55c79df3}} 
+uint8\+\_\+t {\bfseries uart\+Rx\+Buffer} \mbox{[}UART\+\_\+\+RX\+\_\+\+BUFFER\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{shell_8c_a3f98e2db2fa0d8f0cfd87b887576207f}\label{shell_8c_a3f98e2db2fa0d8f0cfd87b887576207f}} 
+uint8\+\_\+t {\bfseries uart\+Tx\+Buffer} \mbox{[}UART\+\_\+\+TX\+\_\+\+BUFFER\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{shell_8c_acb32291986b24711ba628581bd8c3246}\label{shell_8c_acb32291986b24711ba628581bd8c3246}} 
+int {\bfseries cmd\+\_\+ready}
+\item 
+\mbox{\Hypertarget{shell_8c_a4b512d0a6dcc3c7d7e6dd9a7714852c4}\label{shell_8c_a4b512d0a6dcc3c7d7e6dd9a7714852c4}} 
+int {\bfseries vitesse} = 0
+\item 
+\mbox{\Hypertarget{shell_8c_ae59df4a59773ed74bbc9708d0f741934}\label{shell_8c_ae59df4a59773ed74bbc9708d0f741934}} 
+uint32\+\_\+t {\bfseries courant} = 0
+\item 
+\mbox{\Hypertarget{shell_8c_a68f3de16b386b5b3f15d9b5eb4189280}\label{shell_8c_a68f3de16b386b5b3f15d9b5eb4189280}} 
+char {\bfseries vitesse\+\_\+buffer} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{shell_8c_a8b893859891afe33d4bba72ba06fd381}\label{shell_8c_a8b893859891afe33d4bba72ba06fd381}} 
+uint8\+\_\+t {\bfseries prompt} \mbox{[}$\,$\mbox{]} =\char`\"{}user@Nucleo-\/STM32\+G474$>$$>$\char`\"{}
+\item 
+uint8\+\_\+t {\bfseries started} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{shell_8c_a98a2c452a5e7053154e9f49a4cad4e98}\label{shell_8c_a98a2c452a5e7053154e9f49a4cad4e98}} 
+uint8\+\_\+t {\bfseries newline} \mbox{[}$\,$\mbox{]} =\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{shell_8c_a25205e7c6d817620c1d9f7351a817a04}\label{shell_8c_a25205e7c6d817620c1d9f7351a817a04}} 
+uint8\+\_\+t {\bfseries cmd\+Not\+Found} \mbox{[}$\,$\mbox{]} =\char`\"{}Command not found\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{shell_8c_ab14258017916e3981b4255388d7a2030}\label{shell_8c_ab14258017916e3981b4255388d7a2030}} 
+uint8\+\_\+t $\ast$ {\bfseries com} \mbox{[}COM\+\_\+\+NB\mbox{]} =\{\char`\"{}help\char`\"{}, \char`\"{}pinout\char`\"{}, \char`\"{}start\char`\"{}, \char`\"{}stop\char`\"{}, \char`\"{}speed\char`\"{}, \char`\"{}current\char`\"{}\}
+\item 
+uint8\+\_\+t $\ast$ {\bfseries pins} \mbox{[}PIN\+\_\+\+NB\mbox{]}
+\item 
+\mbox{\Hypertarget{shell_8c_a6cc4a218b16a0bc450c28357689c6198}\label{shell_8c_a6cc4a218b16a0bc450c28357689c6198}} 
+uint8\+\_\+t {\bfseries vitesse\+Max\+Tx} \mbox{[}$\,$\mbox{]} =\char`\"{}Vitesse trop importante\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Shell program body. 
+
+\begin{DoxyAuthor}{Author}
+Solène Altaber, Lilian Fournier, Corentin Fraysse
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2022 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{shell_8c_a3529f29606412127c579b098455bfe92}\label{shell_8c_a3529f29606412127c579b098455bfe92}} 
+\index{shell.c@{shell.c}!shell\_execute@{shell\_execute}}
+\index{shell\_execute@{shell\_execute}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{shell\_execute()}{shell\_execute()}}
+{\footnotesize\ttfamily void shell\+\_\+execute (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de reconnaître une commande et l\textquotesingle{}éxécuter~\newline
+ -\/help \+: Liste les fonctions disponibles~\newline
+ -\/pinout \+: Donne le pinout de la carte~\newline
+ -\/start \+: Génère des PWM avec rapport cyclique a 50\%~\newline
+ -\/speed \+: Argument \+: nombre compris entre 0 et 1023 (512 etant le rapport cyclique de 50\%)~\newline
+ -\/stop \+: Arrête les PWM~\newline
+ -\/current \+: Récupère le courant pour l\textquotesingle{}asservissement (non testée) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8c_a9a41609fa1e3d6dbbecd0b5cd28fae0f}\label{shell_8c_a9a41609fa1e3d6dbbecd0b5cd28fae0f}} 
+\index{shell.c@{shell.c}!shell\_process@{shell\_process}}
+\index{shell\_process@{shell\_process}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{shell\_process()}{shell\_process()}}
+{\footnotesize\ttfamily void shell\+\_\+process (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Traite le caractère reçu à chaque entrée, met le flag pour lancer la commande à 1 si le CR est détecté 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{shell_8c_ad1f18f739da7703628c3663209463a0d}\label{shell_8c_ad1f18f739da7703628c3663209463a0d}} 
+\index{shell.c@{shell.c}!shell\_start@{shell\_start}}
+\index{shell\_start@{shell\_start}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{shell\_start()}{shell\_start()}}
+{\footnotesize\ttfamily void shell\+\_\+start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Set la mémoire des variables utilisées par le Shell, print le mssage de bienvenue et lance la première interruption UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{shell_8c_a541b31b5e83102b03fd6c355c4ae3dfa}\label{shell_8c_a541b31b5e83102b03fd6c355c4ae3dfa}} 
+\index{shell.c@{shell.c}!pins@{pins}}
+\index{pins@{pins}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{pins}{pins}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ pins\mbox{[}PIN\+\_\+\+NB\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{\textcolor{stringliteral}{"{}PA0 : ADC2\_IN1"{}}, \textcolor{stringliteral}{"{}PA2 : USART2\_TX"{}}, \textcolor{stringliteral}{"{}PA3 : USART2\_RX"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PA5 : GREEN\_LED"{}}, \textcolor{stringliteral}{"{}PA8 : TIM1\_CH1"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PA9 : TIM1\_CH2"{}}, \textcolor{stringliteral}{"{}PA11 : TIM1\_CH1N"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PA12 : TIM1\_CH2N"{}}, \textcolor{stringliteral}{"{}PA13 : T\_SWDIO"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PA14 : T\_SWCLK"{}}, \textcolor{stringliteral}{"{}PC1 : ADC2\_IN7"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PC3 : ISO\_RESET"{}}, \textcolor{stringliteral}{"{}PC13 : BLUE\_BUTTON"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PC14 : RCC\_OSC32\_IN"{}}, \textcolor{stringliteral}{"{}PC15 : RCC\_OSC32\_OUT"{}},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"{}PF0 : RCC\_OSC\_IN"{}}, \textcolor{stringliteral}{"{}PF1 : RCC\_OSC\_OUT"{}}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{shell_8c_a835573497a60b314a9bf5a6fcac9602a}\label{shell_8c_a835573497a60b314a9bf5a6fcac9602a}} 
+\index{shell.c@{shell.c}!started@{started}}
+\index{started@{started}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{started}{started}}
+{\footnotesize\ttfamily uint8\+\_\+t started\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}\(\backslash\)r\(\backslash\)n*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*"{}}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}\(\backslash\)r\(\backslash\)n| Welcome on Nucleo-\/STM32G474RET |"{}}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}\(\backslash\)r\(\backslash\)n*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*"{}}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}\(\backslash\)r\(\backslash\)n"{}}}
+
+\end{DoxyCode}

@@ -1,0 +1,13 @@
+digraph "RCCEx Exported Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="RCCEx CRS Extended\l Features",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__CRS__Extended__Features.html",tooltip=" "];
+  Node1 [label="RCCEx Exported Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="RCCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx.html",tooltip="RCC Extended HAL module driver."];
+  Node3 [label="Flags Interrupts Management",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCCEx__Flags__Interrupts__Management.html",tooltip="macros to manage the specified RCC Flags and interrupts."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

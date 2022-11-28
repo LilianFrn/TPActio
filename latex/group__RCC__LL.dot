@@ -1,0 +1,33 @@
+digraph "RCC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node6 [label="Peripheral RNG get\l clock source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__RNG.html",tooltip=" "];
+  Node12 [label="PLL division factor\l (PLLR)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__PLLR__DIV.html",tooltip=" "];
+  Node14 [label="PLL division factor\l (PLLQ)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__PLLQ__DIV.html",tooltip=" "];
+  Node4 [label="RCC Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__Private__Constants.html",tooltip=" "];
+  Node11 [label="PLL division factor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__PLLM__DIV.html",tooltip=" "];
+  Node3 [label="RCC Private Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__Private__Variables.html",tooltip=" "];
+  Node1 [label="RCC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node8 [label="Peripheral ADC get\l clock source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__ADC.html",tooltip=" "];
+  Node5 [label="RCC Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__Exported__Constants.html",tooltip=" "];
+  Node7 [label="Peripheral USB get\l clock source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__USB.html",tooltip=" "];
+  Node2 [label="STM32G4xx_LL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__LL__Driver.html",tooltip=" "];
+  Node10 [label="PLL entry clock source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__PLLSOURCE.html",tooltip=" "];
+  Node9 [label="RTC clock source selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__RTC__CLKSOURCE.html",tooltip=" "];
+  Node13 [label="PLL division factor\l (PLLP)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__RCC__LL__EC__PLLP__DIV.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node14 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,131 @@
+\hypertarget{main_8c}{}\doxysection{TP\+\_\+\+Actionneur/\+Core/\+Src/main.c File Reference}
+\label{main_8c}\index{TP\_Actionneur/Core/Src/main.c@{TP\_Actionneur/Core/Src/main.c}}
+
+
+Main program body.  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shell.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a3cfd4c64a086b8c385f5dd0e69712d2a}\label{main_8c_a3cfd4c64a086b8c385f5dd0e69712d2a}} 
+int {\bfseries \+\_\+\+\_\+io\+\_\+putchar} (int chr)
+\item 
+\mbox{\Hypertarget{main_8c_a3590cbedff5ccfffe87306b2417324f0}\label{main_8c_a3590cbedff5ccfffe87306b2417324f0}} 
+void {\bfseries PWN\+\_\+start} (void)
+\item 
+\mbox{\Hypertarget{main_8c_ab23fc4be2f7fa1dcde31415d66166003}\label{main_8c_ab23fc4be2f7fa1dcde31415d66166003}} 
+void {\bfseries PWN\+\_\+stop} (void)
+\item 
+void \mbox{\hyperlink{group__GPIO__Exported__Functions__Group2_ga0cd91fd3a9608559c2a87a8ba6cba55f}{HAL\+\_\+\+GPIO\+\_\+\+EXTI\+\_\+\+Callback}} (uint16\+\_\+t GPIO\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Overwrite du callback du bouton pour lancer les PWM avec. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Entrée de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void {\bfseries HAL\+\_\+\+UART\+\_\+\+Rx\+Cplt\+Callback} (\mbox{\hyperlink{group__UART__Exported__Types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} $\ast$huart)
+\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_acd9221f1aa19aebfe0b744947f2daf49}\label{main_8c_acd9221f1aa19aebfe0b744947f2daf49}} 
+\mbox{\hyperlink{structADC__HandleTypeDef}{ADC\+\_\+\+Handle\+Type\+Def}} {\bfseries hadc2}
+\item 
+\mbox{\Hypertarget{main_8c_a25fc663547539bc49fecc0011bd76ab5}\label{main_8c_a25fc663547539bc49fecc0011bd76ab5}} 
+\mbox{\hyperlink{structTIM__HandleTypeDef}{TIM\+\_\+\+Handle\+Type\+Def}} {\bfseries htim1}
+\item 
+\mbox{\Hypertarget{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}} 
+\mbox{\hyperlink{group__UART__Exported__Types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} {\bfseries huart2}
+\item 
+\mbox{\Hypertarget{main_8c_a9d8a518124b90c249458a5b30ab36c52}\label{main_8c_a9d8a518124b90c249458a5b30ab36c52}} 
+uint32\+\_\+t {\bfseries uart\+Rx\+Received}
+\item 
+\mbox{\Hypertarget{main_8c_a2542ac6d4440b9e1c4a6435c55c79df3}\label{main_8c_a2542ac6d4440b9e1c4a6435c55c79df3}} 
+uint8\+\_\+t {\bfseries uart\+Rx\+Buffer} \mbox{[}UART\+\_\+\+RX\+\_\+\+BUFFER\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_a3f98e2db2fa0d8f0cfd87b887576207f}\label{main_8c_a3f98e2db2fa0d8f0cfd87b887576207f}} 
+uint8\+\_\+t {\bfseries uart\+Tx\+Buffer} \mbox{[}UART\+\_\+\+TX\+\_\+\+BUFFER\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_acb32291986b24711ba628581bd8c3246}\label{main_8c_acb32291986b24711ba628581bd8c3246}} 
+int {\bfseries cmd\+\_\+ready} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main program body. 
+
+\begin{DoxyAuthor}{Author}
+Solène Altaber, Lilian Fournier, Corentin Fraysse
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2022 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Entrée de l\textquotesingle{}application. 
+
+Connexions \+:
+\begin{DoxyItemize}
+\item Blue TOP PA 12 -\/$>$ PIN 11
+\item Blue BOTTOM PA 9 -\/$>$ PIN 29
+\item Yellow TOP PA 11 -\/$>$ PIN 12
+\item Yellow BOTTOM PA 8 -\/$>$ PIN 30
+\item RESET PC 3 -\/$>$ PIN 33
+\item ADC1\+\_\+\+IN PA 0 -\/$>$ PIN 16 
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+
+\end{DoxyItemize}\mbox{\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure the main internal regulator output voltage
+
+Initializes the RCC Oscillators according to the specified parameters in the \mbox{\hyperlink{structRCC__OscInitTypeDef}{RCC\+\_\+\+Osc\+Init\+Type\+Def}} structure.
+
+Initializes the CPU, AHB and APB buses clocks

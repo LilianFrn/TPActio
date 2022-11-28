@@ -1,0 +1,9 @@
+digraph "GPIO mode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="GPIO Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__Exported__Constants.html",tooltip=" "];
+  Node1 [label="GPIO mode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="GPIO Configuration Mode Elements values convention: 0x00WX00YZ."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

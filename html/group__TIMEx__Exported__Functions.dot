@@ -1,0 +1,23 @@
+digraph "TIM Extended Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="TIMEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx.html",tooltip="TIM Extended HAL module driver."];
+  Node1 [label="TIM Extended Exported\l Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 [label="Extended Timer Hall\l Sensor functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group1.html",tooltip="Timer Hall Sensor functions."];
+  Node4 [label="Extended Timer Complementary\l Output Compare functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group2.html",tooltip="Timer Complementary Output Compare functions."];
+  Node5 [label="Extended Timer Complementary\l PWM functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group3.html",tooltip="Timer Complementary PWM functions."];
+  Node6 [label="Extended Timer Complementary\l One Pulse functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group4.html",tooltip="Timer Complementary One Pulse functions."];
+  Node7 [label="Extended Peripheral\l Control functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group5.html",tooltip="Peripheral Control functions."];
+  Node8 [label="Extended Callbacks\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group6.html",tooltip="Extended Callbacks functions."];
+  Node9 [label="Extended Peripheral\l State functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Exported__Functions__Group7.html",tooltip="Extended Peripheral State functions."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+}

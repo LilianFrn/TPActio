@@ -1,0 +1,46 @@
+\hypertarget{group__CMSIS__Core__FpuFunctions}{}\doxysection{FPU Functions}
+\label{group__CMSIS__Core__FpuFunctions}\index{FPU Functions@{FPU Functions}}
+
+
+Function that provides FPU type.  
+
+
+Collaboration diagram for FPU Functions\+:
+% FIG 0
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__CMSIS__Core__SAUFunctions}{SAU Functions}}
+\begin{DoxyCompactList}\small\item\em Functions that configure the SAU. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__CMSIS__Core__CacheFunctions}{Cache Functions}}
+\begin{DoxyCompactList}\small\item\em Functions that configure Instruction and Data cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__Core__NVICFunctions_ga6bcad99ce80a0e7e4ddc6f2379081756}{SCB\+\_\+\+Get\+FPUType}} (void)
+\begin{DoxyCompactList}\small\item\em get FPU type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Function that provides FPU type. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__CMSIS__Core__NVICFunctions_ga6bcad99ce80a0e7e4ddc6f2379081756}\label{group__CMSIS__Core__NVICFunctions_ga6bcad99ce80a0e7e4ddc6f2379081756}} 
+\index{FPU Functions@{FPU Functions}!SCB\_GetFPUType@{SCB\_GetFPUType}}
+\index{SCB\_GetFPUType@{SCB\_GetFPUType}!FPU Functions@{FPU Functions}}
+\doxysubsubsection{\texorpdfstring{SCB\_GetFPUType()}{SCB\_GetFPUType()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+STATIC\+\_\+\+INLINE uint32\+\_\+t SCB\+\_\+\+Get\+FPUType (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+get FPU type 
+
+returns the FPU type \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\bfseries{0}}\+: No FPU
+\item {\bfseries{1}}\+: Single precision FPU
+\item {\bfseries{2}}\+: Double + Single precision FPU 
+\end{DoxyItemize}
+\end{DoxyReturn}

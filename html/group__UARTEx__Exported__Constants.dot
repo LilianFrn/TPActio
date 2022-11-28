@@ -1,0 +1,19 @@
+digraph "UARTEx Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="UARTEx Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="UARTEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx.html",tooltip="UART Extended HAL module driver."];
+  Node6 [label="UARTEx TXFIFO threshold\l level",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__TXFIFO__threshold__level.html",tooltip="UART TXFIFO threshold level."];
+  Node3 [label="UARTEx Word Length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Word__Length.html",tooltip=" "];
+  Node7 [label="UARTEx RXFIFO threshold\l level",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__RXFIFO__threshold__level.html",tooltip="UART RXFIFO threshold level."];
+  Node4 [label="UARTEx WakeUp Address\l Length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__WakeUp__Address__Length.html",tooltip=" "];
+  Node5 [label="UARTEx FIFO mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__FIFO__mode.html",tooltip="UART FIFO mode."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+}

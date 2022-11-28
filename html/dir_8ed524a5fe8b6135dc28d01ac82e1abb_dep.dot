@@ -1,0 +1,15 @@
+digraph "TP_Actionneur/Drivers/CMSIS/Device/ST/STM32G4xx" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_272318993899a44385ece43de34a0c55 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ST" fontname="Helvetica", fontsize="10", URL="dir_272318993899a44385ece43de34a0c55.html"]
+  subgraph clusterdir_8ed524a5fe8b6135dc28d01ac82e1abb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_8ed524a5fe8b6135dc28d01ac82e1abb.html"];
+    dir_8ed524a5fe8b6135dc28d01ac82e1abb [shape=plaintext label="STM32G4xx"];
+  dir_2461ae1b6184f106c2be7147b7f34cb5 [shape=box label="Include" fillcolor="white" style="filled" URL="dir_2461ae1b6184f106c2be7147b7f34cb5.html"];
+  }
+  }
+  dir_54c3447f72bbb92ab589ae426907ac81 [shape=box label="Include" URL="dir_54c3447f72bbb92ab589ae426907ac81.html"];
+  dir_2461ae1b6184f106c2be7147b7f34cb5->dir_54c3447f72bbb92ab589ae426907ac81 [headlabel="1", labeldistance=1.5 headhref="dir_000016_000017.html"];
+}

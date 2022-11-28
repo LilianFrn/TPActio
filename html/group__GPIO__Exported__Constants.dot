@@ -1,0 +1,17 @@
+digraph "GPIO Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="GPIO Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node6 [label="GPIO pull",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__pull.html",tooltip="GPIO Pull-Up or Pull-Down Activation."];
+  Node2 [label="GPIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO.html",tooltip="GPIO HAL module driver."];
+  Node4 [label="GPIO mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__mode.html",tooltip="GPIO Configuration Mode Elements values convention: 0x00WX00YZ."];
+  Node3 [label="GPIO pins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__pins.html",tooltip=" "];
+  Node5 [label="GPIO speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__GPIO__speed.html",tooltip="GPIO Output Maximum frequency."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+}

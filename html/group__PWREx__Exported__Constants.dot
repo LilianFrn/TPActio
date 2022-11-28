@@ -1,0 +1,33 @@
+digraph "PWR Extended Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node8 [label="PWR battery charging\l resistor selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__VBAT__Battery__Charging__Selection.html",tooltip=" "];
+  Node12 [label="PWR PVM external interrupts\l lines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__PVM__EXTI__LINE.html",tooltip=" "];
+  Node7 [label="PWR Regulator voltage\l scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__Regulator__Voltage__Scale.html",tooltip=" "];
+  Node2 [label="PWREx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx.html",tooltip="PWR Extended HAL module driver."];
+  Node6 [label="PWR PVM interrupt and\l event mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__PVM__Mode.html",tooltip=" "];
+  Node11 [label="GPIO port",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__GPIO.html",tooltip=" "];
+  Node5 [label="Peripheral Voltage\l Monitoring type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__PVM__Type.html",tooltip=" "];
+  Node3 [label="Shift to apply to retrieve\l polarity information from\l PWR_WAKEUP_PINy_xxx constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__WUP__Polarity.html",tooltip=" "];
+  Node10 [label="GPIO bit number for\l I/O setting in standby\l/shutdown mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__GPIO__Bit__Number.html",tooltip=" "];
+  Node1 [label="PWR Extended Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node4 [label="PWR wake-up pins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__WakeUp__Pins.html",tooltip=" "];
+  Node9 [label="PWR battery charging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__VBAT__Battery__Charging.html",tooltip=" "];
+  Node13 [label="PWR PVM event lines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__PVM__EVENT__LINE.html",tooltip=" "];
+  Node14 [label="PWR Status Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__PWREx__Flag.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node14 [shape=plaintext, dir="back", style="solid"];
+}

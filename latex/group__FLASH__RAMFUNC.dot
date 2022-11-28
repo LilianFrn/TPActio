@@ -1,0 +1,11 @@
+digraph "FLASH_RAMFUNC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="FLASH_RAMFUNC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="FLASH functions executed from RAM."];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__HAL__Driver.html",tooltip=" "];
+  Node3 [label="FLASH_RAMFUNC_Exported\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__FLASH__RAMFUNC__Exported__Functions.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,29 @@
+digraph "TIM Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="TIM Exported Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="TIM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM.html",tooltip="TIM HAL module driver."];
+  Node6 [label="TIM Time Base functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group1.html",tooltip="Time Base functions."];
+  Node7 [label="TIM Output Compare\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group2.html",tooltip="TIM Output Compare functions."];
+  Node8 [label="TIM PWM functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group3.html",tooltip="TIM PWM functions."];
+  Node9 [label="TIM Input Capture functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group4.html",tooltip="TIM Input Capture functions."];
+  Node10 [label="TIM One Pulse functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group5.html",tooltip="TIM One Pulse functions."];
+  Node11 [label="TIM Encoder functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group6.html",tooltip="TIM Encoder functions."];
+  Node12 [label="TIM IRQ handler management",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group7.html",tooltip="IRQ handler management."];
+  Node3 [label="TIM Peripheral Control\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group8.html",tooltip="Peripheral Control functions."];
+  Node4 [label="TIM Callbacks functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group9.html",tooltip="TIM Callbacks functions."];
+  Node5 [label="TIM Peripheral State\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIM__Exported__Functions__Group10.html",tooltip="Peripheral State functions."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+}

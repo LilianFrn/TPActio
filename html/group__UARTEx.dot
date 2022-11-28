@@ -1,0 +1,17 @@
+digraph "UARTEx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="UARTEx Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Constants.html",tooltip=" "];
+  Node1 [label="UARTEx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UART Extended HAL module driver."];
+  Node3 [label="UARTEx Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Types.html",tooltip=" "];
+  Node5 [label="UARTEx Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Private__Macros.html",tooltip=" "];
+  Node6 [label="UARTEx_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__UARTEx__Exported__Functions.html",tooltip=" "];
+  Node2 [label="STM32G4xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__STM32G4xx__HAL__Driver.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+}

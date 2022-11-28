@@ -1,0 +1,31 @@
+digraph "TIM Extended Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="TIMEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx.html",tooltip="TIM Extended HAL module driver."];
+  Node7 [label="TIM Extended Break\l input polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Break__Input__Source__Polarity.html",tooltip=" "];
+  Node3 [label="TIM Extended Remapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Remap.html",tooltip=" "];
+  Node5 [label="TIM Extended Break\l input source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Break__Input__Source.html",tooltip=" "];
+  Node1 [label="TIM Extended Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node6 [label="TIM Extended Break\l input source enabling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Break__Input__Source__Enable.html",tooltip=" "];
+  Node4 [label="TIM Extended Break\l input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Break__Input.html",tooltip=" "];
+  Node10 [label="TIM Extended Encoder\l index position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Encoder__Index__Position.html",tooltip=" "];
+  Node13 [label="TIM Extended Encodder\l index prescaler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Encoder__Index__Prescaler.html",tooltip=" "];
+  Node12 [label="TIM Extended Encoder\l index polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Encoder__Index__Polarity.html",tooltip=" "];
+  Node9 [label="TIM Extended Bitfield\l SMS preload enabling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__SMS__Preload__Enable.html",tooltip=" "];
+  Node11 [label="TIM Extended Encoder\l index direction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Encoder__Index__Direction.html",tooltip=" "];
+  Node8 [label="TIM Extended Timer\l input selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__TIMEx__Timer__Input__Selection.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node13 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,73 @@
+\hypertarget{structRCC__CRSInitTypeDef}{}\doxysection{RCC\+\_\+\+CRSInit\+Type\+Def Struct Reference}
+\label{structRCC__CRSInitTypeDef}\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+
+
+RCC\+\_\+\+CRS Init structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32g4xx\+\_\+hal\+\_\+rcc\+\_\+ex.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_a9bbb4a0ff6d8bbf68bc01b566b946fd8}{Prescaler}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_aea4064c542d29150a92632119b8e214d}{Source}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_a1c7e141417a1115913ff856031f81a32}{Polarity}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_ab8dd9da2b1da68ae09c30c7da19355a1}{Reload\+Value}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_af7b100cc0c3331c736f9f9d1fca37119}{Error\+Limit\+Value}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structRCC__CRSInitTypeDef_a99f5012ef8ca6a5bcc882f9a5070699e}{HSI48\+Calibration\+Value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RCC\+\_\+\+CRS Init structure definition. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structRCC__CRSInitTypeDef_af7b100cc0c3331c736f9f9d1fca37119}\label{structRCC__CRSInitTypeDef_af7b100cc0c3331c736f9f9d1fca37119}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!ErrorLimitValue@{ErrorLimitValue}}
+\index{ErrorLimitValue@{ErrorLimitValue}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{ErrorLimitValue}{ErrorLimitValue}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+Error\+Limit\+Value}
+
+Specifies the value to be used to evaluate the captured frequency error value. This parameter must be a number between 0 and 0x\+FF or a value of \mbox{\hyperlink{group__RCCEx__CRS__ErrorLimitDefault}{RCCEx CRS Error\+Limit\+Default}} \mbox{\Hypertarget{structRCC__CRSInitTypeDef_a99f5012ef8ca6a5bcc882f9a5070699e}\label{structRCC__CRSInitTypeDef_a99f5012ef8ca6a5bcc882f9a5070699e}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!HSI48CalibrationValue@{HSI48CalibrationValue}}
+\index{HSI48CalibrationValue@{HSI48CalibrationValue}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{HSI48CalibrationValue}{HSI48CalibrationValue}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+HSI48\+Calibration\+Value}
+
+Specifies a user-\/programmable trimming value to the HSI48 oscillator. This parameter must be a number between 0 and 0x7F or a value of \mbox{\hyperlink{group__RCCEx__CRS__HSI48CalibrationDefault}{RCCEx CRS HSI48\+Calibration\+Default}} \mbox{\Hypertarget{structRCC__CRSInitTypeDef_a1c7e141417a1115913ff856031f81a32}\label{structRCC__CRSInitTypeDef_a1c7e141417a1115913ff856031f81a32}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!Polarity@{Polarity}}
+\index{Polarity@{Polarity}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Polarity}{Polarity}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+Polarity}
+
+Specifies the input polarity for the SYNC signal source. This parameter can be a value of \mbox{\hyperlink{group__RCCEx__CRS__SynchroPolarity}{RCCEx CRS Synchro\+Polarity}} \mbox{\Hypertarget{structRCC__CRSInitTypeDef_a9bbb4a0ff6d8bbf68bc01b566b946fd8}\label{structRCC__CRSInitTypeDef_a9bbb4a0ff6d8bbf68bc01b566b946fd8}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!Prescaler@{Prescaler}}
+\index{Prescaler@{Prescaler}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Prescaler}{Prescaler}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+Prescaler}
+
+Specifies the division factor of the SYNC signal. This parameter can be a value of \mbox{\hyperlink{group__RCCEx__CRS__SynchroDivider}{RCCEx CRS Synchro\+Divider}} \mbox{\Hypertarget{structRCC__CRSInitTypeDef_ab8dd9da2b1da68ae09c30c7da19355a1}\label{structRCC__CRSInitTypeDef_ab8dd9da2b1da68ae09c30c7da19355a1}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!ReloadValue@{ReloadValue}}
+\index{ReloadValue@{ReloadValue}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{ReloadValue}{ReloadValue}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+Reload\+Value}
+
+Specifies the value to be loaded in the frequency error counter with each SYNC event. It can be calculated in using macro {\bfseries{HAL\+\_\+\+RCC\+\_\+\+CRS\+\_\+\+RELOADVALUE\+\_\+\+CALCULATE(\+\_\+\+\_\+\+FTARGET}}, {\bfseries{FSYNC}}) This parameter must be a number between 0 and 0x\+FFFF or a value of \mbox{\hyperlink{group__RCCEx__CRS__ReloadValueDefault}{RCCEx CRS Reload\+Value\+Default}} . \mbox{\Hypertarget{structRCC__CRSInitTypeDef_aea4064c542d29150a92632119b8e214d}\label{structRCC__CRSInitTypeDef_aea4064c542d29150a92632119b8e214d}} 
+\index{RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}!Source@{Source}}
+\index{Source@{Source}!RCC\_CRSInitTypeDef@{RCC\_CRSInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily uint32\+\_\+t RCC\+\_\+\+CRSInit\+Type\+Def\+::\+Source}
+
+Specifies the SYNC signal source. This parameter can be a value of \mbox{\hyperlink{group__RCCEx__CRS__SynchroSource}{RCCEx CRS Synchro\+Source}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+TP\+\_\+\+Actionneur/\+Drivers/\+STM32\+G4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32g4xx__hal__rcc__ex_8h}{stm32g4xx\+\_\+hal\+\_\+rcc\+\_\+ex.\+h}}\end{DoxyCompactItemize}
